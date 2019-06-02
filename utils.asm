@@ -1,5 +1,5 @@
-; Выбрать банк памяти 
-; A - номер банка
+; Select memory bank 
+; A - memory bank
 setBank:
     push bc
     ld bc, #7ffd

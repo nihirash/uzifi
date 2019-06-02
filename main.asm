@@ -2,14 +2,6 @@
     org 32768
 Start:
         ei
-        
-        ld c, #fe
-        ld a, 0
-        out (c), a
-        
-        ld hl, stringE
-        call printZ64
-
         call clearScreen
         call uartBegin
         ld b, 1

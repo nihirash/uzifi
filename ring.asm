@@ -24,7 +24,6 @@ ringL
     ld (hl), a
     ret
 
-    display $
 ; HL - Compare string(null terminated)
 ; A - 0 NOT Found 1 - Found
 searchRing:
