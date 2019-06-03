@@ -25,7 +25,8 @@ ringL
     ret
 
 ; HL - Compare string(null terminated)
-; A - 0 NOT Found 1 - Found
+; A - 0 NOT Found 
+;     1 Found
 searchRing:
     ld b, 0
     push hl
@@ -53,16 +54,16 @@ ringCmpLp
     ld b, a
     pop af
     ld a, (hl)
-    and b
+    cp b
     pop bc
     ld a, 0
-    ret z  
+    ret nz  
     inc de
     inc hl
     djnz ringCmpLp
     ld a, 1
     ret
     
-ring_buffer dup 32
+ring_buffer dup 33
             defb 0
             edup

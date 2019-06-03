@@ -13,7 +13,7 @@ Start:
 
 stringE: defb 'UZiFi by Nihirash (c) 2019', 0
 ssid    defb 'PinnCom', 0
-pass    defb 'Lobotomy', 0
+pass    defb 'lobotomy', 0
 
     include "utils.asm"
     include "uart.asm"
